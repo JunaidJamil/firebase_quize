@@ -1,0 +1,147 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+ 
+}
+
+.inpp{
+    background-color: rgb(253, 218, 175);
+    width: 50%;
+    height: 350px;
+    box-shadow: 0px 0px 10px grey;
+   color: black;
+   
+}
+.inpp h3{
+    margin: 1rem;
+}
+#opion{
+ margin: 3rem;
+ width: 100%;
+}
+#btns{
+    width: 80%;
+    height:45px;
+    text-align: center;
+    margin: 0.5rem;
+    background: linear-gradient(90deg, rgb(162, 159, 230) 0%, rgba(9,9,121,1) 24%, rgba(0,212,255,1) 97%);
+    color: rgb(249, 0, 0);
+   margin-left: 45px;
+}
+.inpp button{
+    width: 90%;
+    height:35px;
+    text-align: center;
+    margin: 0.5rem;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(152, 152, 231) 24%, rgba(0,212,255,1) 97%); 
+color: white;
+font-size: 20px;
+}
+.inpp button:active {
+    background-color: yellow;
+  }
+
+
+#score{
+    border: 2px solid black;
+    height: 60px;
+    width:auto ;
+ 
+}
+
+
+.totalbox{
+    width: 40%;
+    height: auto;
+
+    margin: auto;
+    padding: 10px 30px; 
+    background: #fff;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+}
+
+.boxcheckbox{
+margin-top: 10px;
+}
+
+button{
+margin-top: 20px;
+}
+
+.loginbtn{
+    background: rgb(250, 113, 136);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+}
+.loginbtn:hover,
+.loginbtn:focus{
+    background: rgb(230, 106, 127);
+}
+
+.boxcheckbox label{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .totalbox{
+        width: 90%;
+    }
+  }
+
+
+
+
+/* @media screen and (max-width: 480px){
+    .inpp{
+        width: 250px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 460px) {
+    button,#btns {
+      width: 250px;
+    }
+  } */
