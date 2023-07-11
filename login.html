@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
+  <nav class="navigate">
+    <div class="nav_inn">
+         <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <!-- <li><a href="#" id="quize">QUIZ</a></li> -->
+            <li><a href="#">Quize</a> </li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="/login.html">LOGIN</a></li>
+         </ul>
+    </div>
+</nav>
+
+
+
     <div id="log">
         <div class="totalbox border">
             <h2>Please Login</h2>
       
-              <input placeholder="Email address" type="Email" id="email" required />
-              <input placeholder="Password" type="password" id="password"  required />
+              <input placeholder="Email address" type="Email2" id="email" required />
+              <input placeholder="Password" type="password2" id="password"  required />
               <div class="boxcheckbox">
               
                 <button class="loginbtn" id="btn1">Login</button>
               </div>
-            </form> 
+          <p>If you dont have Account Please <a href="/signin.html">Sign Up</a></p>
           </div>
     </div>
     
@@ -45,9 +59,11 @@ let auth = getAuth(app);
 btn1.addEventListener('click',()=>{
 let email = document.getElementById('email').value
 let password = document.getElementById('password').value
-window.location.href = './index.html'
 signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
+.then((userCredential) => {
+    window.location.href = './index.html';
+    document.getElementById('main').style.display = 'flex';
+
     // Signed in 
     const user = userCredential.user;
     console.log('user',user)
@@ -65,5 +81,7 @@ signInWithEmailAndPassword(auth, email, password)
 
 
     </script>
+<!-- <script type="module" src="/code.js"></script> -->
+
 </body>
 </html>

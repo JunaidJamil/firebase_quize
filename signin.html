@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
+
+  <nav class="navigate">
+    <div class="nav_inn">
+         <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <!-- <li><a href="#" id="quize">QUIZ</a></li> -->
+            <li><a href="#">Quize</a> </li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="/login.html">LOGIN</a></li>
+         </ul>
+    </div>
+</nav>
+
+  <div id="sign">
     <div class="totalbox border" id="sign">
         <h2>Create Account</h2>
     <!-- 
@@ -15,15 +29,16 @@
           <input placeholder="Password" type="password" id="password"  required />
           <div class="boxcheckbox">
            
-            <button class="loginbtn" id="btn">Login</button>
+            <button class="loginbtn" id="btn">Sign Up</button>
           </div>
         </form>
       </div>
+    </div>
 
 
 <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -74,9 +89,7 @@ console.log('errorMessage', errorMessage)
 
 
 })
-
 </script>
-
 
 </body>
 </html>
